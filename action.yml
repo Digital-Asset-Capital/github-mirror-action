@@ -16,4 +16,5 @@ runs:
   args:
     - ${{ inputs.origin }}
   env:
-    GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
+    SOURCE_GITHUB_TOKEN: ${{ inputs.SOURCE_GITHUB_TOKEN }}
+    TARGET_GITHUB_TOKEN: ${{ inputs.TARGET_GITHUB_TOKEN }}

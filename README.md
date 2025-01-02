@@ -47,7 +47,8 @@ jobs:
         uses: bridgelightcloud/github-mirror-action@v1
         with:
           origin: 'TARGET_REPO_HERE'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_GITHUB_TOKEN: ${{ secrets.SOURCE_TOKEN }}
+          TARGET_GITHUB_TOKEN: ${{ secrets.TARGET_TOKEN }}
 ```
 
 Commit and push your changes
