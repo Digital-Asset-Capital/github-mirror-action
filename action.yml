@@ -7,8 +7,11 @@ inputs:
   origin:
     description: 'URL of remote git repository'
     required: true
-  GITHUB_TOKEN:
-    description: 'set this to the value of secrets.GITHUB_TOKEN'
+  SOURCE_GITHUB_TOKEN:
+    description: 'Token used to read the remote repo to mirror'
+    required: true
+  TARGET_GITHUB_TOKEN:
+    description: 'Token used to update the current/target repository'
     required: true
 runs:
   using: 'docker'
